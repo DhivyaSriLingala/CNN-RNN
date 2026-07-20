@@ -1,4 +1,4 @@
-# Day 12 — Convolutional and Recurrent Neural Networks
+# Day 12 - Convolutional and Recurrent Neural Networks
 
 Day 12 of my AI career journey focused on two specialized neural-network architectures that changed modern AI:
 
@@ -34,7 +34,7 @@ A fully connected network treats its inputs as independent features. This loses 
 
 CNNs learn that nearby pixels are related. RNNs learn that earlier values can influence later values.
 
-## Part 1 — Convolutional Neural Networks
+## Part 1 - Convolutional Neural Networks
 
 ### Why CNNs work well with images
 
@@ -108,7 +108,7 @@ The resulting `128 × 4 × 4` feature tensor is flattened and passed to the clas
 - Validation inside `torch.no_grad()`
 - Test accuracy calculated after every epoch
 
-## Part 2 — RNNs and LSTMs
+## Part 2 - RNNs and LSTMs
 
 ### Why sequence models are needed
 
@@ -241,4 +241,4 @@ Day 13 will continue the journey with **Transformers and attention mechanisms**,
 
 ---
 
-**Progress:** Day 12 complete — CNNs, RNNs, and LSTMs ✅
+**Progress:** Day 12 complete - CNNs, RNNs, and LSTMs ✅
