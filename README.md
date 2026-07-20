@@ -5,7 +5,7 @@ Today, I am focusing on two specialized neural-network architectures that change
 - **Convolutional Neural Networks (CNNs)** for spatial data such as images
 - **Recurrent Neural Networks (RNNs) and LSTMs** for sequential data such as text and time series
 
-On Day 11, I built a fully connected neural network. Today, I learned why fully connected networks are not always the best choice and implemented models that take advantage of structure in the data.
+Yesterday, I built a fully connected neural network. Today, I learned why fully connected networks are not always the best choice and implemented models that take advantage of structure in the data.
 
 ![Day 12](./Day-12.png)
 
