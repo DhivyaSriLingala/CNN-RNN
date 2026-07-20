@@ -1,4 +1,4 @@
-# Day 12 - Convolutional and Recurrent Neural Networks
+# Convolutional and Recurrent Neural Networks
 
 Day 12 of my AI career journey focused on two specialized neural-network architectures that changed modern AI:
 
