@@ -237,8 +237,5 @@ X_train, X_test = X[:split], X[split:]
 
 ## Next Step
 
-Day 13 will continue the journey with **Transformers and attention mechanisms**, the foundation of modern language models such as GPT and BERT.
+Tomorrow will continue the journey with **Transformers and attention mechanisms**, the foundation of modern language models such as GPT and BERT.
 
----
-
-**Progress:** Day 12 complete - CNNs, RNNs, and LSTMs ✅
