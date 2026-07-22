@@ -221,22 +221,17 @@ X_train, X_test = X[:split], X[split:]
 4. What problem does an LSTM address that a basic RNN struggles with?
 5. Why should time-series data not be shuffled before the train/test split?
 
- `(64, 32, 32, 32)`. The batch size remains 64, the layer produces 32 output channels, and `padding=1` preserves the `32 × 32` spatial dimensions for a `3 × 3` kernel with stride 1.
 
-### 2. 
+<details>
+<summary><strong>Answer key</strong></summary>
+1. `(64, 32, 32, 32)`. The batch size remains 64, the layer produces 32 output channels, and `padding=1` preserves the `32 × 32` spatial dimensions for a `3 × 3` kernel with stride 1.
+2. A CNN connects each filter only to a small local region and shares the same filter weights across every image location. A fully connected layer creates a separate weight for every input-to-neuron connection.
+3. Max pooling keeps the largest activation in each local region. It reduces spatial dimensions and computation while retaining strong feature signals and making the model less sensitive to small shifts in feature position.
+4. An LSTM helps address vanishing gradients and the resulting difficulty of learning long-term dependencies. Its cell state and gates allow important information to travel across many time steps.
+5. Shuffling can allow future observations to influence training while earlier observations are used for testing. This data leakage produces an unrealistic evaluation. A chronological split better represents forecasting unseen future values.
 
-**Answer:** A CNN connects each filter only to a small local region and shares the same filter weights across every image location. A fully connected layer creates a separate weight for every input-to-neuron connection.
 
-### 3. 
-**Answer:** Max pooling keeps the largest activation in each local region. It reduces spatial dimensions and computation while retaining strong feature signals and making the model less sensitive to small shifts in feature position.
-
-### 4. 
-
-**Answer:** An LSTM helps address vanishing gradients and the resulting difficulty of learning long-term dependencies. Its cell state and gates allow important information to travel across many time steps.
-
-### 5. 
-
-**Answer:** Shuffling can allow future observations to influence training while earlier observations are used for testing. This data leakage produces an unrealistic evaluation. A chronological split better represents forecasting unseen future values.
+</details>
 
 ## Next Step
 
