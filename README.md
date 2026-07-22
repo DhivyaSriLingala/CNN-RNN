@@ -224,6 +224,8 @@ X_train, X_test = X[:split], X[split:]
 
 <details>
 <summary><strong>Answer key</strong></summary>
+
+
 1. `(64, 32, 32, 32)`. The batch size remains 64, the layer produces 32 output channels, and `padding=1` preserves the `32 × 32` spatial dimensions for a `3 × 3` kernel with stride 1.
 2. A CNN connects each filter only to a small local region and shares the same filter weights across every image location. A fully connected layer creates a separate weight for every input-to-neuron connection.
 3. Max pooling keeps the largest activation in each local region. It reduces spatial dimensions and computation while retaining strong feature signals and making the model less sensitive to small shifts in feature position.
